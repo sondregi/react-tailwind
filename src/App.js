@@ -1,5 +1,6 @@
 import React from 'react';
-
+import popularDestinations from './components/popularDestinations';
+import Destinations from './components/Destinations';
 
 export default function App() {
   return (
@@ -31,11 +32,23 @@ export default function App() {
           <img className="absolute inset-0 w-full h-full object-cover object-center" src="./img/beach-work.jpg" alt="Woman on workcation" />
         </div>
       </div>
+
       <div className="bg-gray-100">
         <div className=" max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8">
           <h2 className="text-xl text-gray-800">Popular destinations</h2>
           <p className="mt-2 text-gray-600">A selection of great work-friendly cities with lots to see and explore.</p>
           <div className="mt-6 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
+          {popularDestinations.map((destination) =>
+            <Destinations destination={destination} key={destination.city} />
+      )}
+
+            
+
+
+
+            
+
+
             <div className="flex items-center rounded-lg bg-white shadow-lg overflow-hidden hover:scale-110 duration-300 transform transition">
               <img className="h-32 w-32 flex-shrink-0" src="/img/toronto.jpg" alt="Toronto skyline" />
               <div className="px-6 py-4">
@@ -46,6 +59,8 @@ export default function App() {
                 </div>
               </div>
             </div>
+
+
           </div>
         </div>
       </div>
