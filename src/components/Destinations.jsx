@@ -1,5 +1,4 @@
 import React from 'react';
-import popularDestinations from '../components/popularDestinations';
 
 export default function Destinations({ destination }) {
     return (
