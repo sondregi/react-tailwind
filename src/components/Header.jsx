@@ -19,7 +19,7 @@ export default function Header() {
           </p>
 
             <div className="text-center lg:text-left mt-4 space-x-1 sm:mt-6">
-              <a className="btn btn-primary shadow-lg hover:-translate-y-0.5 transform transition" href="/">Book your escape</a>
+              <a className="btn btn-primary shadow-lg hover:-translate-y-0.5 transform transition mr-3" href="/">Book your escape</a>
               <a className="mt-3 md:mt-0 btn btn-secondary" href="/">Learn more</a>
             </div>
           </div>
