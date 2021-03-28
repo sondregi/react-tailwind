@@ -13,7 +13,10 @@ export default function App() {
           <p className="mt-2 text-gray-600">A selection of great work-friendly cities with lots to see and explore.</p>
           <div className="mt-6 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
             {popularDestinations.map((destination) =>
-              <Destinations destination={destination} key={destination.city} />
+              <Destinations 
+              destination={destination} 
+              key={destination.city} 
+              />
             )}
           </div>
         </div>
